@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body:not(#home),
+.modal-body {
+    background-color: white;
+}
+
+
+body.dark-theme {
+    --first-color: hsl(31, 76%, 74%);
+    --button-color: hsl(0, 0%, 24%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(0, 0%, 12%);
+    --container-color: hsl(0, 0%, 16%);
+    --border-color: hsl(0, 0%, 20%);
+  }
+  
+  /*========== Button Dark/Light ==========*/
+  .change-theme {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  /*========== 
+      Color changes in some parts of 
+      the website, in dark theme 
+  ==========*/
+  .dark-theme .change-theme,
+  .dark-theme .nav__toggle,
+  .dark-theme .nav__shop,
+  .dark-theme .button--gray {
+    color: hsl(0, 0%, 15%);
+  }
+  
+  .dark-theme .scroll-header {
+    box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
+  }
+  
+  .scroll-header .change-theme,
+  .scroll-header .nav__toggle,
+  .scroll-header .nav__shop {
+    color: var(--title-color);
+  }
+  
+  .dark-theme::-webkit-scrollbar {
+    background: hsl(0, 0%, 30%);
+  }
+
+#home {
+    height: 100vh;
+    background-image: url();
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#home .intro {
+    color: orange;
+    height: 100vh;
+}
+
+#home .intro .col-md-8 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.intro h1 {
+    color: orange;
+}
+
+
+/*Menü*/
+
+nav {
+    background-color: orange;
+}
+
+nav a:first-child img {
+    width: 40px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+}
+
+.navbar-toggler{
+    margin-right: 5px;
+}
+
+nav a{
+    margin-left: 5px;
+}
+
+.banner {
+    background-image: url();
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card {
+    color: #ffffff;
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+h5 {
+    text-align: center;
+    font-variant: small-caps;
+    font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: orange;
+    color: #ffffff;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer li>img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.modal-content {
+    background-color: orange;
+}
+
+.blog-img {
+    border-radius: 4px;
+    border: 1px solid orange;
+}
+
+p.szerzo {
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+}
+
+.box{
+    border: 1px solid orange;
+}
+
+.box h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    background-color: orange;
+    color: #fff;
+    padding: .5rem;
+}
+
+.box span.btn{
+    margin: .25rem;
+}
