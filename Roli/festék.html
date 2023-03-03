@@ -21,11 +21,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="navbar-nav">
-                <a class="nav-link" href="../Bálint/index.html"><img src="../pics/logo.png" alt=""></a>
-                <a class="nav-link" href="../">Főoldal</a>
+                <a class="nav-link" href="../Bálint/HTML/Főoldal.html"><img src="../pics/logo.png" alt=""></a>
+                <a class="nav-link" href="../Bálint/HTML/Főoldal.html">Főoldal</a>
                 <a class="nav-link active" href="">Festékek</a>
                 <a class="nav-link" href="../Bazsi/szerszamkatalogus.html">Szerszámkatalógus</a>
-                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="/Bálint/HTML/Faanyag.html">Faanyag</a>
             </div>
         </div>
     </nav>
@@ -109,13 +110,11 @@
     <!-- Modal -->
 
     <!-- The Modal -->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src="pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" alt="Image">
-    </div>
-  </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
   
   <!-- Trigger/Open the Modal -->
   <img id="myBtn" src="pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" alt="Image Thumbnail">
@@ -139,30 +138,18 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script>
-        // Get the modal
         var modal = document.getElementById("myModal");
-      
-        // Get the image that opens the modal
-        var img = document.getElementById("myBtn");
-      
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-      
-        // When the user clicks the image, open the modal 
-        img.onclick = function() {
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
           modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
         }
-      
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
           modal.style.display = "none";
-        }
-      
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
         }
       </script>
 </body>
