@@ -194,10 +194,6 @@ p.szerzo {
     max-width: 500px;
   }
 
-  nav {
-    display: inline-block;
-    margin-top: 10px;
-  }
   
   #caption {
     margin: auto;
