@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body:not(#home),
 .modal-body {
     background-color: white;
@@ -59,7 +59,7 @@ nav a{
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
+
     color: #FFA500;
     text-align: center;
     font-weight: bold;
@@ -78,7 +78,8 @@ h1 {
 h5 {
     text-align: center;
     font-variant: small-caps;
-    font-family: 'Inter', sans-serif;
+
+    text-decoration: none;
 }
 
 a:hover {
@@ -130,7 +131,7 @@ footer li>img {
 
 p.szerzo {
     text-align: right;
-    font-family: 'Inter', sans-serif;
+
 }
 
 .box{
@@ -138,7 +139,7 @@ p.szerzo {
 }
 
 .box h2{
-    font-family: 'Inter', sans-serif;
+
     font-size: 1.5rem;
     background-color: #FFA500;
     color: #fff;
