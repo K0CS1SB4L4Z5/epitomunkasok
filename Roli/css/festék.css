@@ -150,44 +150,15 @@ p.szerzo {
     margin: .25rem;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+#bal{
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-  }
+    width: 300px;
+    height: 200px;
+    position: fixed;
+}
 
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
 
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
 
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
   /* The Image */
   img {
@@ -206,3 +177,51 @@ p.szerzo {
     padding: 10px 0;
     height: 150px;
   }
+
+  p {
+    color: orange;
+}
+
+.table-container tr:nth-child(2n) {
+    background: #ededed;
+}
+* {
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: hsla(0,0%,74.1%,0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+}
+* {
+    --tw-shadow: 0 0 transparent;
+}
+*, :after, :before {
+    background-repeat: no-repeat;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+th{
+    text-emphasis-color:;
+}
