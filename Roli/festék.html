@@ -21,11 +21,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="navbar-nav">
-                <a class="nav-link" href="../Bálint/index.html"><img src="../pics/logo.png" alt=""></a>
-                <a class="nav-link" href="../">Főoldal</a>
+                <a class="nav-link" href="../Bálint/HTML/index.html"><img src="../pics/logo.png" alt=""></a>
+                <a class="nav-link" href="/Bálint/HTML/Faanyag.html">Faanyag</a>
                 <a class="nav-link active" href="">Festékek</a>
-                <a class="nav-link" href="../Bazsi/szerszamkatalogus.html">Szerszámkatalógus</a>
-                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="../Bazsi/szerszamkatalogus.html">Szerszámok</a>
+                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="../Bazsi/rolunk.html">Rólunk</a>
+                
             </div>
         </div>
     </nav>
@@ -43,17 +45,17 @@
         
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
             <div class="col mb-4">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#flatwhiteModal">
+                <a href="festek1.html" >
                     <div class="card">
                         <img src="../Roli/pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" class="card-img-top" alt="Flat White">
                         <div class="card-body">
-                            <h5 class="card-title">,,,</h5>
+                            <h5 class="card-title">Beltéri diszperziós falfesték fehér 10l</h5>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="col mb-4">
-                <a href="#">
+                <a href="festek2.html">
                     <div class="card">
                         <img src="pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" class="card-img-top" alt="Americano">
                         <div class="card-body">
@@ -106,65 +108,34 @@
         </div>
     </div>
 
-    <!-- Modal -->
-
-    <!-- The Modal -->
-<div id="myModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src="pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" alt="Image">
-    </div>
-  </div>
-  
-  <!-- Trigger/Open the Modal -->
-  <img id="myBtn" src="pics/Vödör-Fedéllel-Kerek-AUER--er_5_6-226_dk_02.jpg" alt="Image Thumbnail">
-
-    <div class="footer">
-        <footer class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4 offset-lg-1">
-                    <h2 class="mt-3">Kapcsolat</h2>
-                    <ul>
-                        <li>DIY barkácsáruház</li>
-                        <li></li>
-                        <li>+36-1-555-55-55</li>
-                    </ul>
-                </div>
+  <div class="footer">
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <h3 class="mt-3">Székhely</h3>
+                <ul>
+                    <li>1047 Baross utca 6</li>
+                </ul>
             </div>
-        </footer>
-    </div>
-
+            <div class="col-sm-6 col-lg-4">
+                <h3 class="mt-3">E-mail</h3>
+                <ul>
+                    <li>DIY@web.hu</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <h3 class="mt-3">Telefon</h3>
+                <ul>
+                    <li>+36-1-666-99-99</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-      
-        // Get the image that opens the modal
-        var img = document.getElementById("myBtn");
-      
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-      
-        // When the user clicks the image, open the modal 
-        img.onclick = function() {
-          modal.style.display = "block";
-        }
-      
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-      
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-      </script>
+
 </body>
 
 </html>
