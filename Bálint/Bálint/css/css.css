@@ -1,8 +1,52 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 body:not(#home),
 .modal-body {
     background-color: white;
 }
+
+
+body.dark-theme {
+    --first-color: hsl(31, 76%, 74%);
+    --button-color: hsl(0, 0%, 24%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(0, 0%, 12%);
+    --container-color: hsl(0, 0%, 16%);
+    --border-color: hsl(0, 0%, 20%);
+  }
+  
+  
+  .change-theme {
+    color: var(--title-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  
+  .dark-theme .change-theme,
+  .dark-theme .nav__toggle,
+  .dark-theme .nav__shop,
+  .dark-theme .button--gray {
+    color: hsl(0, 0%, 15%);
+  }
+  
+  .dark-theme .scroll-header {
+    box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
+  }
+  
+  .scroll-header .change-theme,
+  .scroll-header .nav__toggle,
+  .scroll-header .nav__shop {
+    color: var(--title-color);
+  }
+  
+  .dark-theme::-webkit-scrollbar {
+    background: hsl(0, 0%, 30%);
+  }
+
 #home {
     height: 100vh;
     background-image: url();
@@ -23,6 +67,8 @@ body:not(#home),
 .intro h1 {
     color: orange;
 }
+
+
 
 
 /*Menü*/
@@ -47,6 +93,7 @@ nav a{
     margin-left: 5px;
 }
 
+
 .banner {
     background-image: url();
     background-position: center center;
@@ -55,8 +102,7 @@ nav a{
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    color: white;
+    color: orange;
     text-align: center;
     font-weight: bold;
 }
@@ -74,7 +120,6 @@ h1 {
 h5 {
     text-align: center;
     font-variant: small-caps;
-    font-family: 'Inter', sans-serif;
 }
 
 a:hover {
@@ -104,17 +149,11 @@ footer li>img {
     border: 1px solid orange;
 }
 
-p.szerzo {
-    text-align: right;
-    font-family: 'Inter', sans-serif;
-}
-
 .box{
     border: 1px solid orange;
 }
 
 .box h2{
-    font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     background-color: orange;
     color: #fff;
@@ -123,4 +162,8 @@ p.szerzo {
 
 .box span.btn{
     margin: .25rem;
+}
+
+p {
+    color: orange;
 }
