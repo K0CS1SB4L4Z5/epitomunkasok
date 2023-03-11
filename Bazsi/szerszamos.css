@@ -38,18 +38,17 @@ nav a:first-child img {
     width: 40px;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-left: 5px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     margin-right: 5px;
 }
 
-nav a{
+nav a {
     margin-left: 5px;
 }
-
 
 .banner {
     background-image: url();
@@ -106,18 +105,18 @@ footer li>img {
     border: 1px solid orange;
 }
 
-.box{
+.box {
     border: 1px solid orange;
 }
 
-.box h2{
+.box h2 {
     font-size: 1.5rem;
     background-color: orange;
     color: #fff;
     padding: .5rem;
 }
 
-.box span.btn{
+.box span.btn {
     margin: .25rem;
 }
 
